@@ -1,7 +1,7 @@
 package com.gyx.leetcode.list1_50;
 
 public class MergeTwoLists {
-    public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+    public static ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         if (l1 == null && l2 == null){
             return null;
         }else if (l1 == null){
@@ -23,7 +23,7 @@ public class MergeTwoLists {
         return listNode;
     }
 
-    private void merge(ListNode listNode, ListNode l1, ListNode l2) {
+    private static void merge(ListNode listNode, ListNode l1, ListNode l2) {
         if (l1 == null) {
             listNode.next = l2;
             return;
@@ -58,8 +58,7 @@ public class MergeTwoLists {
         ListNode l2 = new ListNode(1);
         l2.next = new ListNode(3).next=new ListNode(4);
 
-        MergeTwoLists mergeTwoLists = new MergeTwoLists();
-        ListNode node = mergeTwoLists.mergeTwoLists(l1, l2);
+        ListNode node = MergeTwoLists.mergeTwoLists(l1, l2);
 
         while (node != null){
             System.out.println(node.val);
