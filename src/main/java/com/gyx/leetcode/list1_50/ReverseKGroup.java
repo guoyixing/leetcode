@@ -1,16 +1,19 @@
 package com.gyx.leetcode.list1_50;
 
-import com.gyx.leetcode.list1_50.MergeTwoLists.*;
+import com.gyx.leetcode.common.ListNode;
 
 public class ReverseKGroup {
     public ListNode reverseKGroup(ListNode head, int k) {
         int i = k;
-        ListNode[] stack = new ListNode[k];//没有无参构造方法，但是构建了没有值的结点。相当于int i;
+        ListNode[] stack = new ListNode[k];
         ListNode q = head;
-        while(k>0) {//把当前k个结点存入栈中。
+        while(k>0) {
             stack[i-k] = q;
-            if (q!=null) q=q.next;
-            else return head;//结点凑不到k个时，直接返回原部分链表。
+            if (q!=null){
+                q=q.next;
+            }else{
+                return head;
+            }
             k--;
         }
         while(k<i-1) {
