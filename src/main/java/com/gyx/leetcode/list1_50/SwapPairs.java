@@ -1,6 +1,6 @@
 package com.gyx.leetcode.list1_50;
 
-import com.gyx.leetcode.list1_50.MergeTwoLists.ListNode;
+import com.gyx.leetcode.common.ListNode;
 
 public class SwapPairs {
     public ListNode swapPairs(ListNode head) {

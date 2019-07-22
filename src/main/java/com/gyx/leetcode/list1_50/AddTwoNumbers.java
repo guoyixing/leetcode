@@ -1,5 +1,7 @@
 package com.gyx.leetcode.list1_50;
 
+import com.gyx.leetcode.common.ListNode;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -88,10 +90,4 @@ public class AddTwoNumbers {
         }
         return buffer.toString();
     }
-
-    public class ListNode {
-       int val;
-       ListNode next;
-       ListNode(int x) { val = x; }
-   }
 }

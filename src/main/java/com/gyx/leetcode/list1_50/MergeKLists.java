@@ -1,6 +1,6 @@
 package com.gyx.leetcode.list1_50;
 
-import com.gyx.leetcode.list1_50.MergeTwoLists.*;
+import com.gyx.leetcode.common.ListNode;
 import static com.gyx.leetcode.list1_50.MergeTwoLists.mergeTwoLists;
 
 public class MergeKLists {
